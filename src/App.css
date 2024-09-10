@@ -36,7 +36,7 @@ Version: 1.0
      color: #222325 !important;
      font-size: 13px !important;
      font-family: 'Muli', sans-serif !important;
-     font-weight: 400 !important;
+     font-weight: 400;
      background-color: #f0f2f5;
 }
  .container-fluid {
