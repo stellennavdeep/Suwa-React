@@ -10,10 +10,10 @@ const Layout = () => {
         <nav className="navbar navbar-expand-lg navbar-light topbar static-top shadow-sm bg-white osahan-nav-top px-0 p-0">
                 <div className="container">
                 <div className="d-flex justify-content-between align-items-center w-100 ">
-                    <a className="navbar-brand pt-3" href="index.php"><img src="/images/suwaLogo.png" alt="logo" /></a>
+                    <a className="navbar-brand pt-3" href="index.php"><img src="images/suwaLogo.png" alt="logo" /></a>
                     <div className="top-right d-flex justify-content-center align-items-center gap-2">
-                        <a href="#" className="fs-6 pr-2">For your business</a>
-                        <a href="login.html" className="color-text fw-bold fs-6">Login</a>
+                        <Link to="/" className="fs-6 pr-2">For your business</Link>
+                        <Link to="/" className="color-text fw-bold fs-6">Login</Link>
                     </div>
                 </div>
                 </div>
@@ -28,30 +28,30 @@ const Layout = () => {
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav">
                     <li className="nav-item">
-                        <a className="nav-link "href="index.php" >
+                        <Link to="/" className="nav-link">
                             Home
-                        </a>
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="about.html">About</a>
+                    <Link to="/about" className="nav-link">About</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="contact.html">Contact</a>
+                    <Link to="/" className="nav-link">Contact</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">
+                    <Link to="/" className="nav-link" >
                             Hair
-                        </a>
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">
+                    <Link to="/" className="nav-link">
                             Massage
-                        </a>
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">
+                    <Link to="/" className="nav-link">
                             Nails
-                        </a>
+                        </Link>
                     </li>
                     
                     </ul>
@@ -61,31 +61,31 @@ const Layout = () => {
     </header>
 
     <Outlet />
-    
+
     <footer className="bg-white">
       <div className="container">
          <div className="d-flex justify-content-between gap-5">
             <div className="contact-footer footer-list">
                <h2>Contact</h2>
                <div className="">
-                  <a className="navbar-brand pt-3" href="index.html"><img src="images/suwaLogo.png" className="img-fluid" alt="logo" /></a>
+                  <Link className="navbar-brand pt-3" to="/" ><img src="images/suwaLogo.png" className="img-fluid" alt="logo" /></Link>
                </div>
                <div className="mt-3">
                   <ul className="social p-0 d-flex justify-content-between w-75">
                      <li>
-                        <a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a>
+                        <Link to="/"><i className="fa fa-facebook" aria-hidden="true"></i></Link>
                      </li>
                      <li>
-                        <a href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a>
+                        <Link to="/"><i className="fa fa-twitter" aria-hidden="true"></i></Link>
                      </li>
                      <li>
-                        <a href="#"><i className="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <Link to="/"><i className="fa fa-linkedin" aria-hidden="true"></i></Link>
                      </li>
                      <li>
-                        <a href="#"><i className="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                        <Link to="/"><i className="fa fa-pinterest-p" aria-hidden="true"></i></Link>
                      </li>
                      <li>
-                        <a href="#"><i className="fa fa-instagram" aria-hidden="true"></i></a>
+                        <Link to="/"><i className="fa fa-instagram" aria-hidden="true"></i></Link>
                      </li>
                   </ul>
                </div>
@@ -93,26 +93,26 @@ const Layout = () => {
             <div className="footer-list">
                <h2>About</h2>
                <ul className="list">
-                  <li><a href="#">Press &amp; News</a></li>
-                  <li><a href="#">Partnerships</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Terms of Service</a></li>
+                  <li><Link to="/">Press &amp; News</Link></li>
+                  <li><Link to="/">Partnerships</Link></li>
+                  <li><Link to="/">Privacy Policy</Link></li>
+                  <li><Link to="/">Terms of Service</Link></li>
                </ul>
             </div>
             <div className="footer-list">
                <h2>Support</h2>
                <ul className="list">
-                  <li><a href="#">Help &amp; Support</a></li>
-                  <li><a href="#">Trust &amp; Safety</a></li>
+                  <li><Link to="/">Help &amp; Support</Link></li>
+                  <li><Link to="/">Trust &amp; Safety</Link></li>
                </ul>
             </div>
             <div className="footer-list">
                <h2>Community</h2>
                <ul className="list">
-                  <li><a href="#">Forum</a></li>
-                  <li><a href="#">Affiliates</a></li>
-                  <li><a href="#">Invite a Friend</a></li>
-                  <li><a href="#">Become a Seller</a></li>
+                  <li><Link to="/">Forum</Link></li>
+                  <li><Link to="/">Affiliates</Link></li>
+                  <li><Link to="/">Invite a Friend</Link></li>
+                  <li><Link to="/">Become a Seller</Link></li>
                </ul>
             </div>
          </div>
