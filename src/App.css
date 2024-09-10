@@ -33,16 +33,13 @@ Version: 1.0
 
 /* Body */
  body {
-     color: #222325 !important;
-     font-size: 13px !important;
+     color: #222325 ;
+     font-size: 13px ;
      font-family: 'Muli', sans-serif !important;
      font-weight: 400;
      background-color: #f0f2f5;
 }
- .container-fluid {
-     max-width: 1400px;
-     padding: 0 32px;
-}
+
  ul, ul li {
      list-style: none;
      margin: 0px;
@@ -3009,9 +3006,7 @@ footer div ul li a:hover { color: #03989e; }
      .recommended .inner-slider {
          margin-bottom: 15px;
     }
-     .container-fluid {
-         padding: 24px;
-    }
+
      header {
          height: auto;
     }
@@ -3048,9 +3043,7 @@ footer div ul li a:hover { color: #03989e; }
      width: 100% !important;
 }
  @media (min-width: 0px) and (max-width: 767px) {
-     .container {
-         max-width: 100%;
-    }
+ 
      .navbar-expand-lg .navbar-nav {
          -ms-flex-direction: row;
          flex-direction: row;
@@ -3164,9 +3157,7 @@ footer div ul li a:hover { color: #03989e; }
     }
 }
  @media (min-width: 768px) and (max-width: 1023px) {
-     .container {
-         max-width: 100%;
-    }
+  
      .navbar-expand-lg .navbar-nav {
          -ms-flex-direction: row;
          flex-direction: row;
@@ -3272,10 +3263,5 @@ footer div ul li a:hover { color: #03989e; }
      .osahan-login {
          max-width: 300px;
          margin: auto;
-    }
-}
- @media (min-width: 1024px) and (max-width: 1200px) {
-     .container {
-         max-width: 100%;
     }
 }
