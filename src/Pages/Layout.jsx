@@ -61,6 +61,7 @@ const Layout = () => {
     </header>
 
     <Outlet />
+    
     <footer className="bg-white">
       <div className="container">
          <div className="d-flex justify-content-between gap-5">
