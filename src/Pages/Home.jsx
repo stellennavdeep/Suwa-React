@@ -52,7 +52,7 @@ const Home = () => {
                </div>
             </div>
             <div className="col-lg-5">
-               <img className="img-fluid" src="images/banner.svg" alt='' />
+               <img className="img-fluid" src="./assets/images/banner.svg" alt='' />
             </div>
          </div>
       </div>
