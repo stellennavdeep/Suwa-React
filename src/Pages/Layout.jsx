@@ -10,10 +10,10 @@ const Layout = () => {
         <nav className="navbar navbar-expand-lg navbar-light topbar static-top shadow-sm bg-white osahan-nav-top px-0 p-0">
                 <div className="container">
                 <div className="d-flex justify-content-between align-items-center w-100 ">
-                    <a className="navbar-brand pt-3" href="index.php"><img src="images/suwaLogo.png" alt="logo" /></a>
+                    <Link to={"/"} className="navbar-brand pt-3"><img src="images/suwaLogo.png" alt="logo" /></Link>
                     <div className="top-right d-flex justify-content-center align-items-center gap-2">
                         <Link to="/" className="fs-6 pr-2">For your business</Link>
-                        <Link to="/" className="color-text fw-bold fs-6">Login</Link>
+                        <Link to="/login" className="color-text fw-bold fs-6">Login</Link>
                     </div>
                 </div>
                 </div>
@@ -36,7 +36,7 @@ const Layout = () => {
                     <Link to="/about" className="nav-link">About</Link>
                     </li>
                     <li className="nav-item">
-                    <Link to="/" className="nav-link">Contact</Link>
+                    <Link to="/contact" className="nav-link">Contact</Link>
                     </li>
                     <li className="nav-item">
                     <Link to="/" className="nav-link" >

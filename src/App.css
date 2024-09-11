@@ -33,6 +33,7 @@ hello
 @import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap');
 
 /* Body */
+
  body {
      color: #222325 ;
      font-size: 13px ;
@@ -55,6 +56,7 @@ hello
      margin: 0;
      padding: 0;
 }
+p{font-size: 16px;}
  .btn-success{
      background: #2cdd9b;
      background: -webkit-linear-gradient(legacy-direction(to right), #2cdd9b 0%, #1dc8cc 100%);
@@ -699,7 +701,7 @@ p.help-block li {
      display: -webkit-box;
      display: -ms-flexbox;
      display: flex;
-     padding-top: 20px;
+     padding-top: 10px;
      -webkit-box-align: baseline;
      -ms-flex-align: baseline;
      align-items: baseline;
@@ -719,20 +721,9 @@ p.help-block li {
      display: -webkit-box;
      display: -ms-flexbox;
      display: flex;
-     margin-right: 12px;
+     margin-right: 6px;
 }
- .popular ul li a {
-     background-color: transparent;
-     padding: 0 8px;
-     border: 1px solid #b5b6ba;
-     text-decoration: none;
-     border-radius: 3px;
-     color: #62646a;
-     font-size: 13px;
-     -webkit-transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
-     -o-transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
-     transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
-}
+.popular ul li a { background-color: white; padding: 1px 10px; border: 1px solid #ddd; text-decoration: none; border-radius: 7px; color: #62646a; font-size: 14px; -webkit-transition: background-color .3s ease-in-out, border-color .3s ease-in-out; -o-transition: background-color .3s ease-in-out, border-color .3s ease-in-out; transition: background-color .3s ease-in-out, border-color .3s ease-in-out; }
  .popular ul li a:hover {
      background-color: #222326;
      border: 1px solid #222326;
@@ -1707,9 +1698,7 @@ p.help-block li {
  .view_slider.recommended {
      position: relative;
 }
- .recommended .slick-slide {
-     margin: 0 15px;
-}
+ 
  .recommended .slick-list {
      margin: 0 -15px;
 }
@@ -2926,13 +2915,53 @@ p.help-block li {
 footer div ul li a {color: #7a7d85; font-size: 16px; position: relative;}
 footer div ul li a:hover { color: #03989e; }
 .trusted-by img { width: 120px; height: 90px; object-fit: cover; border-radius: 20px; }
-.slick-slide {margin: 0 10px;}
+.slick-slide { margin: 0; padding: 0 15px; }
 .slick-list {margin: 0 -10px;}
 .freelancer .d-flex img{width: 100px; height: auto !important; object-fit: contain !important; margin-block: 5px;}
 .freelancer h5 { font-size: 16px; font-weight: 600; }
 .freelancer h5 span { display: block; color: #7a7a7a; font-size: 14px; }
-.inner-banner { background-image: url(../images/innerBg.webp); background-size: cover; height: 50vh; background-position: center; overflow: hidden; }
-.inner-banner::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #0000005c; }
+.inner-banner { background-image: url(../images/innerBg.webp); background-size: cover; height: 50vh; background-position: center; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center; }
+.inner-banner::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 50vh; background-color: #0000005c; }
+.login-wrapper input,form#contactForm input, form#contactForm textarea { height: 44px; border-radius: 10px; background-color: #ffffff17; border: 1px solid #bfbfbf; color: black; font-weight: 600; font-size: 14px; }
+form#contactForm textarea { min-height: 115px; }
+.contact-section{background-color: #03989e3d;}
+form#contactForm input::placeholder, form#contactForm textarea::placeholder { color: black; font-weight: 600; font-size: 14px; }
+.btn-main { background-color: #03989e29; border: 1px solid #03989e; color: #03989e; font-weight: 600; border-radius: 10px; padding-block: 8px; font-size: 14px;}
+.inner-banner .col-md-12{z-index: 1;} 
+.touch-info{display: grid; grid-template-columns: 1fr 1fr; text-align: center; height: 100%;}
+.touch-info-wrapper {background-color: #011e20; border-radius: 20px;overflow: hidden;}
+.touch-info h6{color: white;}
+.touch-info svg:not(.contact-links svg) { width: 35px; height: 35px; }
+.contact-links svg{width: 22px; height: 22px;}
+.touch-info figure { border: 1px solid white; border-radius: 40px; padding: 15px; }
+.touch-info .footer-social i { width: 20px; height: 20px; font-size: 20px; color: white; }
+.touch-info .footer-social a { width: 22px; border: 1px solid white; padding: 18px; height: 22px; display: flex; justify-content: center; align-items: center; border-radius: 21px; }
+.contact-links h3{letter-spacing: 2px;}
+.touch-info > div { border: 1px solid #dcdcdc57; }
+.slick-arrow::before, .slick-arrow::after { content: no-close-quote; }
+.contact-form { background-color: white; border-radius: 20px; padding: 20px 30px; }
+
+
+.about-banner img{max-height: 500px; width: 100%; object-fit: cover;}
+.agents-section{background-color: #03989e3d;}
+.agents-card{background-color: white; padding: 30px 10px; border-radius: 20px;}
+.login-main a img{width: 150px;}
+.login-left { background-color: #afd6d9; border-top-right-radius: 40px; border-bottom-right-radius: 40px; height: 100vh;}
+.login-main{max-height: 100vh;background-color: #f7f7f7;}
+.login-wrapper { border-radius: 20px; box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; background-color: white; padding: 30px 25px; }
+.location-dropdown svg { position: absolute; right: 10px; top: 18px; z-index: 0; }
+.search-btn { position: absolute; top: 0; right: 0px; border: 0px; border-radius: 3px; width: 50px; }
+.search-bar input { padding: 10px 70px 10px 20px; }
+/* .homepage-search-block{background-image: url("/images/bannerMain3.svg"); background-repeat: no-repeat; background-size: cover;}
+.homepage-search-form .row{background-color: white;padding: 40px 20px;border-radius: 20px; box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;}
+.homepage-search-form .form-control { font-size: 16px; height: 48px; border: 1px solid #e1e1e1 !important; }
+.form-control:focus{box-shadow: none !important;} */
+
+.form-control:focus{box-shadow: none !important;} 
+.homepage-search-form .row { background-color: white; padding: 0px !important; margin: 0px !important; border-radius: 8px; overflow: hidden; }
+.homepage-search-form .row .form-group:not(:last-child) { border-right: 1px solid #d3d3d37a !important; }
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus{background-color: white;}
+
 
 /* web design */
 /* responsive design */
