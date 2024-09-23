@@ -177,66 +177,25 @@ const Home = () => {
 <div className="freelance-projects bg-white py-5">
    <div className="container">
    <Slider {...settings} className="row freelance-slider">
-   <div className="col">
-         <div className="freelancer">
-           <img src="images/salon1.webp" alt="Salon 1" />
-           <div className="d-flex justify-content-start align-items-start flex-column p-2">
-             <h5>
-               Best Salon
-               <span> New York</span>
-             </h5>
-             <img src="images/5 star.png" alt="5 stars" />
-           </div>
-         </div>
-       </div>
-       <div className="col">
-         <div className="freelancer">
-           <img src="images/salon2.webp" alt="Salon 2" />
-           <div className="d-flex justify-content-start align-items-start flex-column p-2">
-             <h5>
-               Best Salon
-               <span> New York</span>
-             </h5>
-             <img src="images/5 star.png" alt="5 stars" />
-           </div>
-         </div>
-       </div>
-       <div className="col">
-         <div className="freelancer">
-           <img src="images/salon3.webp" alt="Salon 3" />
-           <div className="d-flex justify-content-start align-items-start flex-column p-2">
-             <h5>
-               Best Salon
-               <span> New York</span>
-             </h5>
-             <img src="images/5 star.png" alt="5 stars" />
-           </div>
-         </div>
-       </div>
-       <div className="col">
-         <div className="freelancer">
-           <img src="images/salon1.webp" alt="Salon 1" />
-           <div className="d-flex justify-content-start align-items-start flex-column p-2">
-             <h5>
-               Best Salon
-               <span> New York</span>
-             </h5>
-             <img src="images/5 star.png" alt="5 stars" />
-           </div>
-         </div>
-       </div>
-       <div className="col">
-         <div className="freelancer">
-           <img src="images/salon2.webp" alt="Salon 2" />
-           <div className="d-flex justify-content-start align-items-start flex-column p-2">
-             <h5>
-               Best Salon
-               <span> New York</span>
-             </h5>
-             <img src="images/5 star.png" alt="5 stars" />
-           </div>
-         </div>
-       </div>
+  
+   {
+        data.map((item) => (
+          <div className="col" key={item.id}>
+            <div className="freelancer">
+              <img src={item.Image} alt={`Salon ${item.name}`} />
+              <div className="d-flex justify-content-start align-items-start flex-column p-2">
+                <h5>
+                  {item.name}
+                  <span>{item.location}</span>
+                </h5>
+                <div className="rating">
+                  <img src="images/5 star.png" alt="5 stars" />
+                </div>
+              </div>
+            </div>
+          </div>
+        ))
+      }
  
 </Slider>
    </div>

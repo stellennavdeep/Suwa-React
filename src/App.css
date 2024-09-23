@@ -723,10 +723,10 @@ p.help-block li {
      display: flex;
      margin-right: 6px;
 }
-.popular ul li a { background-color: white; padding: 1px 10px; border: 1px solid #ddd; text-decoration: none; border-radius: 7px; color: #62646a; font-size: 14px; -webkit-transition: background-color .3s ease-in-out, border-color .3s ease-in-out; -o-transition: background-color .3s ease-in-out, border-color .3s ease-in-out; transition: background-color .3s ease-in-out, border-color .3s ease-in-out; }
+.popular ul li a { background-color: white; padding: 1px 10px; border: 1px solid #ddd; text-decoration: none; border-radius: 7px; color: #62646a; font-size: 14px; transition: all 0.225s ease-in; }
  .popular ul li a:hover {
-     background-color: #222326;
-     border: 1px solid #222326;
+     background-color: #02999c;
+     border: 1px solid #02999c;
      text-decoration: none;
      color: #ffffff;
 }
